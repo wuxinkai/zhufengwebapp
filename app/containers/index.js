@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import RouterMap from '../routes/index';
+import '../assets/index.less';
 export default class App extends Component{
     constructor(){
         super();
