@@ -1,3 +1,5 @@
 import React from 'react';
 import {render} from 'react-dom';
-render(<h1>hello</h1>,document.querySelector('#root'));
+import App from './containers';
+import './assets/index.less';
+render(<App/>,document.querySelector('#root'));

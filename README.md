@@ -30,5 +30,15 @@ $ yarn add express
 "build","webpack -p"
 ```
 
+## 目录结构
+- components 组件
+- containers 页面组件，或者自己的subpage目录下
+  - Home
+    subpages
+    index.js
+- index.js 用来控制显示哪一个页面
+
+
 ## 项目
-### 1.项目初始化并配置webpack
+1. 项目初始化并配置webpack
+2. 编写首页头部样式
