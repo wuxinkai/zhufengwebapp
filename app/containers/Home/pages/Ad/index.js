@@ -9,10 +9,7 @@ export default class Ad extends Component {
 
     componentWillMount() {
         getAd().then(ads => {
-            this.setState({ads}, () => {
-                console.log(this.state.ads);
-            });
-
+            this.setState({ads});
         });
     }
 

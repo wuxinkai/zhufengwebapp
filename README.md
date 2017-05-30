@@ -43,3 +43,4 @@ $ yarn add express
 1. 项目初始化并配置webpack
 2. 编写首页头部样式
 3. 引入redux
+4. 更新城市

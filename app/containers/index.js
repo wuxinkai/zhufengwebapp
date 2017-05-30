@@ -1,7 +1,11 @@
 import React,{Component} from 'react';
 import RouterMap from '../routes/index';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import actions from '../store/actions';
 import '../assets/index.less';
-export default class App extends Component{
+import userInfo from '../local/userInfo';
+class App extends Component{
     constructor(){
         super();
         this.state = {
@@ -9,6 +13,8 @@ export default class App extends Component{
         };
     }
     componentWillMount(){
+       let city = userInfo.getCity();
+       this.props.updateCity(city);
        this.setState({loaded:true});
     }
     render(){
@@ -21,3 +27,8 @@ export default class App extends Component{
         )
     }
 }
+
+export default connect(
+  null,
+  dispatch=>  bindActionCreators(actions,dispatch)
+)(App);
