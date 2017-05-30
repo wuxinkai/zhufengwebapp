@@ -1,0 +1,41 @@
+.product-area {
+  padding:5px;
+  .products {
+    .product {
+      display: flex;
+      margin:5px 0;
+      img{
+        width: 120px;
+        height: 90px;
+      }
+      .product-desc {
+        width:100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        .subTitle{
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space:nowrap;
+          width:200px;
+        }
+        strong{
+          color:red;
+        }
+        .product-price {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          span{
+            color:#666;
+          }
+        }
+        .distance{
+          position: absolute;
+          right:5px;
+          top:0;
+        }
+      }
+    }
+  }
+}

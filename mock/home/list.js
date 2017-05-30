@@ -4,7 +4,7 @@ module.exports = {
         {
             img: 'http://images2015.cnblogs.com/blog/138012/201610/138012-20161016201638030-473660627.png',
             title: '汉堡大大',
-            subTitle: '叫我汉堡大大，还你多彩口味',
+            subTitle: '叫我汉堡大大，还你多彩口味111111111111111111111111111111111111',
             price: '28',
             distance: '120m',
             number: '389',
