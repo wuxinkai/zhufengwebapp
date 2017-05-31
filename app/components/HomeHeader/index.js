@@ -6,14 +6,14 @@ export default class Home extends Component{
             <div className="home-header back">
                <div className="city">
                    {this.props.city}
-                   <i className="iconfont icon-unfold"></i>
+                   <i className="iconfont icon-moreunfold"></i>
                </div>
                 <div className="search">
                     <i className="iconfont icon-search"></i>
                     <input type="text"/>
                 </div>
                 <div className="profile">
-                    <i className="iconfont icon-people_fill"></i>
+                    <i className="iconfont icon-gerenzhongxin"></i>
                 </div>
             </div>
         )

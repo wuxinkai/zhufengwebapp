@@ -12,4 +12,12 @@ app.get('/api/list',(req,res)=>{
     })
     res.send(result);
 });
+let info = require('./detail/info');
+app.get('/api/detail/:id',function(req,res){
+    res.send(info);
+});
+let comment = require('./detail/comment');
+app.get('/api/comment/:id/:page',function(req,res){
+    res.send(comment);
+});
 app.listen(3000);
