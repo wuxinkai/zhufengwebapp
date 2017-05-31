@@ -45,3 +45,4 @@ $ yarn add express
 3. 引入redux
 4. 更新城市
 5. 显示列表数据
+6. 上拉加载
