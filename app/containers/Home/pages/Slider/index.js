@@ -18,44 +18,44 @@ export default class Slider extends Component{
                <ReactSwipe className="carousel" swipeOptions={options}>
                    <div>
                        <ul>
-                           <li><i className="iconfont icon-gifts"></i><span>美食0</span></li>
-                           <li><i className="iconfont icon-jewelry"></i><span>电影0</span></li>
-                           <li><i className="iconfont icon-bags"></i><span>酒店0</span></li>
-                           <li><i className="iconfont icon-jewelry"></i><span>休闲0</span></li>
-                           <li><i className="iconfont icon-jewelry"></i><span>外卖0</span></li>
-                           <li><i className="iconfont icon-jewelry"></i><span>火锅0</span></li>
-                           <li><i className="iconfont icon-shoes"></i><span>丽人0</span></li>
-                           <li><i className="iconfont icon-shoes"></i><span>周边0</span></li>
-                           <li><i className="iconfont icon-shoes"></i><span>KTV0</span></li>
-                           <li><i className="iconfont icon-shoes"></i><span>摄影0</span></li>
+                           <li><i className="iconfont icon-jewelry"></i><span>美食</span></li>
+                           <li><i className="iconfont icon-jewelry"></i><span>电影</span></li>
+                           <li><i className="iconfont icon-jewelry"></i><span>酒店</span></li>
+                           <li><i className="iconfont icon-jewelry"></i><span>休闲</span></li>
+                           <li><i className="iconfont icon-jewelry"></i><span>外卖</span></li>
+                           <li><i className="iconfont icon-jewelry"></i><span>火锅</span></li>
+                           <li><i className="iconfont icon-jewelry"></i><span>丽人</span></li>
+                           <li><i className="iconfont icon-jewelry"></i><span>周边</span></li>
+                           <li><i className="iconfont icon-jewelry"></i><span>KTV</span></li>
+                           <li><i className="iconfont icon-jewelry"></i><span>摄影</span></li>
                        </ul>
                    </div>
                    <div>
                        <ul>
-                           <li><i className="iconfont icon-gifts"></i><span>美食0</span></li>
-                           <li><i className="iconfont icon-jewelry"></i><span>电影0</span></li>
-                           <li><i className="iconfont icon-bags"></i><span>酒店0</span></li>
-                           <li><i className="iconfont icon-jewelry"></i><span>休闲0</span></li>
-                           <li><i className="iconfont icon-jewelry"></i><span>外卖0</span></li>
-                           <li><i className="iconfont icon-jewelry"></i><span>火锅0</span></li>
-                           <li><i className="iconfont icon-shoes"></i><span>丽人0</span></li>
-                           <li><i className="iconfont icon-shoes"></i><span>周边0</span></li>
-                           <li><i className="iconfont icon-shoes"></i><span>KTV0</span></li>
-                           <li><i className="iconfont icon-shoes"></i><span>摄影0</span></li>
+                           <li><i className="iconfont icon-gifts"></i><span>美食</span></li>
+                           <li><i className="iconfont icon-gifts"></i><span>电影</span></li>
+                           <li><i className="iconfont icon-gifts"></i><span>酒店</span></li>
+                           <li><i className="iconfont icon-gifts"></i><span>休闲</span></li>
+                           <li><i className="iconfont icon-gifts"></i><span>外卖</span></li>
+                           <li><i className="iconfont icon-gifts"></i><span>火锅</span></li>
+                           <li><i className="iconfont icon-gifts"></i><span>丽人</span></li>
+                           <li><i className="iconfont icon-gifts"></i><span>周边</span></li>
+                           <li><i className="iconfont icon-gifts"></i><span>KTV</span></li>
+                           <li><i className="iconfont icon-gifts"></i><span>摄影</span></li>
                        </ul>
                    </div>
                    <div>
                        <ul>
-                           <li><i className="iconfont icon-gifts"></i><span>美食0</span></li>
-                           <li><i className="iconfont icon-jewelry"></i><span>电影0</span></li>
-                           <li><i className="iconfont icon-bags"></i><span>酒店0</span></li>
-                           <li><i className="iconfont icon-jewelry"></i><span>休闲0</span></li>
-                           <li><i className="iconfont icon-jewelry"></i><span>外卖0</span></li>
-                           <li><i className="iconfont icon-jewelry"></i><span>火锅0</span></li>
-                           <li><i className="iconfont icon-shoes"></i><span>丽人0</span></li>
-                           <li><i className="iconfont icon-shoes"></i><span>周边0</span></li>
-                           <li><i className="iconfont icon-shoes"></i><span>KTV0</span></li>
-                           <li><i className="iconfont icon-shoes"></i><span>摄影0</span></li>
+                           <li><i className="iconfont icon-bags"></i><span>美食</span></li>
+                           <li><i className="iconfont icon-bags"></i><span>电影</span></li>
+                           <li><i className="iconfont icon-bags"></i><span>酒店</span></li>
+                           <li><i className="iconfont icon-bags"></i><span>休闲</span></li>
+                           <li><i className="iconfont icon-bags"></i><span>外卖</span></li>
+                           <li><i className="iconfont icon-bags"></i><span>火锅</span></li>
+                           <li><i className="iconfont icon-bags"></i><span>丽人</span></li>
+                           <li><i className="iconfont icon-bags"></i><span>周边</span></li>
+                           <li><i className="iconfont icon-bags"></i><span>KTV</span></li>
+                           <li><i className="iconfont icon-bags"></i><span>摄影</span></li>
                        </ul>
                    </div>
                </ReactSwipe>

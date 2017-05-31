@@ -7,9 +7,6 @@ let list = require('./home/list');
 app.get('/api/list',(req,res)=>{
     let {city,page} = req.query;
     let result = JSON.parse(JSON.stringify(list));
-    result.data.forEach(item=>{
-        item.title = `[${city}][第${page}页]${item.title}`;
-    })
     res.send(result);
 });
 let info = require('./detail/info');

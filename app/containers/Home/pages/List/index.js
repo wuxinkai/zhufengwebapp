@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {getList} from '../../../../fetch/home';
 import Products from '../../../../components/Products';
-import LoadMore from '../LoadMore';
+import LoadMore from '../../../common/LoadMore';
 import './index.less'
 export default class List extends Component {
     constructor(props) {

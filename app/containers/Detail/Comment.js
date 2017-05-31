@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import {getComment} from '../../fetch/detail';
-import LoadMore from '../Home/pages/LoadMore';
+import LoadMore from '../common/LoadMore';
 import CommentsComponent from '../../components/CommentsComponent';
 export default class Comment extends Component{
     constructor(){
@@ -17,7 +17,6 @@ export default class Comment extends Component{
     }
     load = ()=>{
         getComment(this.props.id,this.state.page).then((res)=>{
-            console.log(res);
             this.setState({
                 hasMore:res.hasMore,
                 data:[...this.state.data,...res.data]
@@ -35,7 +34,7 @@ export default class Comment extends Component{
                 {
                     this.state.data.length>0?<CommentsComponent data={this.state.data}></CommentsComponent>:<div>正在加载</div>
                 }
-                <LoadMore hasMore={this.hasMore} loadMore={this.loadMore} />
+                <LoadMore hasMore={this.state.hasMore} loadMore={this.loadMore} />
             </div>
         )
     }

@@ -8,7 +8,6 @@ export default class ProductInfo extends Component{
     }
     componentDidMount(){
         getInfo(this.props.id).then((info)=>{
-            console.log(info);
             this.setState({info});
         })
     }
