@@ -7,6 +7,7 @@ export default class List extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            loading:false,
             page: 1,
             hasMore: false,
             data: []
@@ -21,12 +22,15 @@ export default class List extends Component {
         getList(this.props.city, this.state.page).then((res) => {
             this.setState({
                 hasMore: res.hasMore,
-                data: [...this.state.data, ...res.data]
+                data: [...this.state.data, ...res.data],
+                loading:false
             });
         })
     }
     loadMore = () => {
-        this.setState({page: this.state.page + 1}, this.load);
+        if(!this.state.loading){
+            this.setState({page: this.state.page + 1,loading:true}, this.load);
+        }
     }
 
     render() {
@@ -34,7 +38,7 @@ export default class List extends Component {
             <div className="product-area">
                 <h3>超值特惠</h3>
                 <Products products={this.state.data}/>
-                <LoadMore loadMore={this.loadMore} hasMore={this.state.hasMore}/>
+                <LoadMore loading={this.state.loading} loadMore={this.loadMore} hasMore={this.state.hasMore}/>
             </div>
         )
     }
