@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import {Link} from 'react-router-dom';
 import './index.less';
 export default class Home extends Component{
     render(){
@@ -13,7 +14,7 @@ export default class Home extends Component{
                     <input type="text"/>
                 </div>
                 <div className="profile">
-                    <i className="iconfont icon-gerenzhongxin"></i>
+                    <Link to="/login"><i className="iconfont icon-gerenzhongxin"></i></Link>
                 </div>
             </div>
         )

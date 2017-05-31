@@ -1,4 +1,5 @@
 let path = require('path');
+let webpack = require('webpack');
 let HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: './app/index.js',
@@ -18,10 +19,12 @@ module.exports = {
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin({template: "./app/index.html"})
+        new HtmlWebpackPlugin({template: "./app/index.html"}),
+        new webpack.HotModuleReplacementPlugin(), //热加载插件
     ],
     devtool: "source-map",//可以提示源码错误而非bundle.js
     devServer: {
+        hot:true,
         proxy: {
             "/api": "http://localhost:3000"
         }
