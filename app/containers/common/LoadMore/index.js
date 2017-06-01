@@ -5,10 +5,12 @@ export default class LoadMore extends Component{
         if (this.timer) clearTimeout(this.timer);
         this.timer = setTimeout(() => {
             let screenHeight = window.screen.height;
-            let top = this.refs.loadMore.getBoundingClientRect().top;
-            if (top <= screenHeight) {
-                this.props.loadMore();
-                clearTimeout(this.timer);
+            if(this.refs && this.refs.loadMore){
+                let top = this.refs.loadMore.getBoundingClientRect().top;
+                if (top <= screenHeight) {
+                    this.props.loadMore();
+                    clearTimeout(this.timer);
+                }
             }
         }, 500);
     };

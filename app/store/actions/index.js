@@ -1,2 +1,3 @@
 import userInfo from './userInfo';
-export default {...userInfo}
+import favorite from './favorite';
+export default {...userInfo,...favorite}

@@ -6,7 +6,7 @@ export default class Home extends Component{
         return (
             <div className="home-header back">
                <div className="city">
-                   {this.props.city}
+                  <span onClick={()=>this.props.history.push('/city')}>{this.props.city}</span>
                    <i className="iconfont icon-moreunfold"></i>
                </div>
                 <div className="search">

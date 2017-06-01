@@ -23,10 +23,11 @@ class Login extends Component {
 
     login =(username)=>{
         this.props.loginUser(username);
-        if(this.props.match.params.route){
-            return this.props.history.push(this.props.match.params.route);
+        if(this.props.match.params.from){
+            return this.props.history.push(decodeURIComponent(this.props.match.params.from));
+        }else{
+            this.props.history.push('/user');
         }
-        this.props.history.push('/user');
     }
 
     render() {

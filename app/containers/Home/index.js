@@ -8,7 +8,7 @@ class Home extends Component{
     render(){
         return (
             <div>
-                <HomeHeader city={this.props.userInfo.city}></HomeHeader>
+                <HomeHeader city={this.props.userInfo.city} history={this.props.history}></HomeHeader>
                 <Slider/>
                 <Ad/>
                 <List city={this.props.userInfo.city}/>

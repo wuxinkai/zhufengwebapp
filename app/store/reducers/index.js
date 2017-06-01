@@ -1,3 +1,4 @@
 import {combineReducers} from 'redux';
 import {userInfo} from './userInfo';
-export default combineReducers({userInfo})
+import {favorite} from './favorite';
+export default combineReducers({userInfo,favorite})
