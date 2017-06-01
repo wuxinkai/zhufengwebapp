@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import {Link} from 'react-router-dom';
+import SearchComponent from '../../components/SearchComponent';
 import './index.less';
 export default class Home extends Component{
     render(){
@@ -11,12 +12,15 @@ export default class Home extends Component{
                </div>
                 <div className="search">
                     <i className="iconfont icon-search"></i>
-                    <input type="text"/>
+                    <SearchComponent value="" search={this.search}/>
                 </div>
                 <div className="profile">
                     <Link to="/login"><i className="iconfont icon-gerenzhongxin"></i></Link>
                 </div>
             </div>
         )
+    }
+    search = (keyword)=>{
+        this.props.history.push(`/search/all/${keyword}`);
     }
 }

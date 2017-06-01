@@ -7,7 +7,7 @@ class User extends Component{
     render(){
         return (
             <div>
-                <PageHeader title="用户信息" history={this.props.history} to={encodeURIComponent('/')}/>
+                <PageHeader history={this.props.history} to={encodeURIComponent('/')}>用户信息</PageHeader>
                 <UserInfoComponent {...this.props.userInfo}/>
                 <OrderList username={this.props.userInfo.username}></OrderList>
             </div>

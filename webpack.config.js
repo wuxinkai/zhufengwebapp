@@ -1,8 +1,13 @@
 let path = require('path');
 let webpack = require('webpack');
 let HtmlWebpackPlugin = require('html-webpack-plugin');
+let ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
+let extract = new ExtractTextWebpackPlugin('bundle.css');
 module.exports = {
-    entry: './app/index.js',
+    entry: {
+      index:'./app/index.js',
+      vendor:
+    },
     output: {
         path: path.resolve('dist'),
         filename: 'bundle.js'
@@ -15,10 +20,18 @@ module.exports = {
                 query: {presets: ["es2015", "stage-0", "react"]},
                 exclude: /node_modules/
             },
-            {test: /\.less$/, use: ["style-loader", "css-loader", "less-loader"]}
+            {test: /\.less$/, use:extract.extract(["css-loader", {
+                loader:'postcss-loader',
+                options:{
+                    plugins:[
+                        require('autoprefixer')
+                    ]
+                }
+            },"less-loader"])}
         ]
     },
     plugins: [
+        extract,
         new HtmlWebpackPlugin({template: "./app/index.html"}),
         new webpack.HotModuleReplacementPlugin(), //热加载插件
     ],

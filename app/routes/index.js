@@ -18,7 +18,7 @@ export default class RouterMap extends Component{
                             <Route path="/login/:from?" component={Login}/>
                             <Route path="/user" component={User}/>
                             <Route path="/city" component={City}/>
-                            <Route path="/search/:kind/:keyword?" component={Search}/>
+                            <Route path="/search/:kind?/:keyword?" component={Search}/>
                         </Switch>
                     </div>
                 </Router>
