@@ -5,8 +5,7 @@ let ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 let extract = new ExtractTextWebpackPlugin('bundle.css');
 module.exports = {
     entry: {
-      index:'./app/index.js',
-      vendor:
+      index:'./app/index.js'
     },
     output: {
         path: path.resolve('dist'),
